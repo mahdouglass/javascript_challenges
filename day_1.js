@@ -12,3 +12,9 @@ function addAllNumbers(...nums) {
         return a + b;
     });
 }
+
+function addAllNumsWithForEach(...nums) {
+    let sum = 0;
+    nums.forEach((num) => sum += num);
+    return sum;
+}
