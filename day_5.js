@@ -4,10 +4,8 @@
 
 function caseInsensitivePalindrome(str) {
     let lowerCase = str.toLowerCase();
-    let splitStr = lowerCase.split("");
-    let reverseStr = splitStr.reverse();
-    let joinStr = reverseStr.join("");
-    if (lowerCase === joinStr) {
+    let reverseStr = lowerCase.split("").reverse().join("");
+    if (lowerCase === reverseStr) {
         return true;
     } else {
         return false;
